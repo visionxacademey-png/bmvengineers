@@ -1,125 +1,21 @@
-.hero {
-  min-height: 90vh;
-
-  display: flex;
-  align-items: start;
-  justify-content: start;
-
-  padding: 80px 10%;                                                                                                                                                                                                                                                                       
-
-  background: linear-gradient(120deg, #f8fbfd, #e4f2f9);
-
-  background-size: 200% 200%;
-  animation: bgMove 10s ease infinite;
-}
-
-@keyframes bgMove {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Content */
-
-.hero-content {
-  max-width: 800px;
-  text-align: start;
-}
-
-/* Heading */
-
-.hero-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  color: #0b2c3d;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-/* Description */
-
-.hero-content p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 35px;
-}
-
-/* Buttons */
-
-.hero-buttons {
-  display: flex;
-  justify-content: start;
-  gap: 20px;
-}
-
-/* Primary Button */
-
-.primary-btn {
-  padding: 14px 28px;
-  border: none;
-  border-radius: 6px;
-
-  background: #0b2c3d;
-  color: white;
-
-  font-size: 16px;
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-.primary-btn:hover {
-  background: #13465f;
-  transform: translateY(-2px);
-}
-
-/* Secondary Button */
-
-.secondary-btn {
-  padding: 14px 28px;
-  border-radius: 6px;
-
-  border: 2px solid #0b2c3d;
-  background: transparent;
-  color: #0b2c3d;
-
-  font-size: 16px;
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-.secondary-btn:hover {
-  background: #0b2c3d;
-  color: white;
-}
-
 /* HERO SECTION */
 
 .hero {
   min-height: 90vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   padding: 80px 10%;
   background: linear-gradient(120deg, #f8fbfd, #e4f2f9);
 }
 
 .hero-content {
-  text-align: center;
+  text-align: start;
   max-width: 800px;
 }
 
 .hero h1 {
+  padding-top: 60px;
   font-size: 48px;
   color: #0b2c3d;
 }
@@ -130,8 +26,9 @@
 }
 
 .hero-buttons {
+  padding-top: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 20px;
 }
 
@@ -153,7 +50,7 @@
 
 .services-preview {
   padding: 100px 10%;
-  text-align: center;
+  text-align: start;
 }
 
 .services-preview-grid {
