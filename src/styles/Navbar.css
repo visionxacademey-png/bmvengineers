@@ -1,0 +1,166 @@
+/* Navbar Container */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 8%;
+
+    background: linear-gradient(90deg, #ffffff, #c8e1ee);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #4fd1ff;
+    transform: scale(1.05);
+}
+
+/* Navigation */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 30px;
+    position: relative;
+}
+
+/* Link */
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Hover underline animation */
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #4fd1ff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #4fd1ff;
+}
+
+/* Menu Icon */
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-icon:hover {
+    color: #4fd1ff;
+}
+
+
+.material-symbols-outlined {
+    font-size: 30px;
+}
+
+.menu-icon span {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* rotate when menu opens */
+.menu-icon.rotate span {
+    transform: rotate(90deg);
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width:768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mobile Menu */
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+
+        background: rgba(255, 255, 255, 0.6);
+        /* transparent background */
+
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+
+        flex-direction: column;
+        align-items: center;
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height 0.4s ease;
+    }
+
+    .blur-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    background: rgba(0,0,0,0.2);
+
+    z-index:900;
+}
+
+    .nav-links.active {
+        max-height: 300px;
+    }
+
+    /* Mobile Items */
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+}

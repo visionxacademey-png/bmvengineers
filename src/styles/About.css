@@ -1,0 +1,114 @@
+.about{
+    padding:100px 10%;
+    background:#f7fbfe;
+}
+
+/* Container */
+
+.about-container{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+/* Heading */
+
+.about h1{
+    font-size:40px;
+    color:#0b2c3d;
+    margin-bottom:30px;
+}
+
+/* Paragraph */
+
+.about p{
+    font-size:18px;
+    line-height:1.7;
+    color:#555;
+    margin-bottom:20px;
+}
+
+/* Vision Mission Layout */
+
+.vision-mission{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+/* Card */
+
+.card{
+    background:white;
+    padding:35px;
+
+    border-radius:10px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card h2{
+    color:#0b2c3d;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+/* ---------------- Animations ---------------- */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp 1s ease forwards;
+}
+
+.delay1{
+    animation-delay:0.2s;
+}
+
+.delay2{
+    animation-delay:0.4s;
+}
+
+.delay3{
+    animation-delay:0.6s;
+}
+
+.delay4{
+    animation-delay:0.8s;
+}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width:768px){
+
+.vision-mission{
+    grid-template-columns:1fr;
+}
+
+.about h1{
+    font-size:32px;
+}
+
+.about p{
+    font-size:16px;
+}
+
+}
