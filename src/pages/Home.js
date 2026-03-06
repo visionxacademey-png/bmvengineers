@@ -146,7 +146,13 @@ function Home() {
           requirements and get professional solutions.
         </p>
 
-        <button className="cta-btn">Contact Us</button>
+        <a
+          href="https://wa.me/919074450935?text=Hello%20BMV%20Engineers%20I%20would%20like%20to%20know%20more"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="cta-btn">Contact Us</button>
+        </a>
 
       </section>
 

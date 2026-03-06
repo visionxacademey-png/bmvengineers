@@ -10,7 +10,7 @@ function Navbar() {
     <>
       <nav className="navbar">
 
-        <div className="logo">BMV</div>
+        <div className="logo">BMV ENGINEERS</div>
 
         <div
           className={menuOpen ? "menu-icon rotate" : "menu-icon"}

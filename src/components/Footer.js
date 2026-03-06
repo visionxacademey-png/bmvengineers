@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "../styles/Footer.css";
@@ -48,7 +47,7 @@ function Footer() {
           <div className="social-icons">
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919074450935"
               target="_blank"
               rel="noreferrer"
             >
@@ -56,7 +55,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/bmv_engineers?igsh=MXF6enBmYmJmMmVhYQ=="
               target="_blank"
               rel="noreferrer"
             >

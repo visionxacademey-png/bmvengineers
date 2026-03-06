@@ -128,8 +128,30 @@
 .cta-btn {
   margin-top: 20px;
   padding: 14px 30px;
-  background: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(10, 157, 198, 0.25);
+}
+
+/* Click effect */
+
+.cta-btn:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* ANIMATION */
