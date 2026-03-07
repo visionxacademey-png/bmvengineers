@@ -81,6 +81,27 @@
     font-size:14px;
 }
 
+
+.footer-contact{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.footer-contact a{
+  color:#000000;
+  text-decoration:none;
+  line-height:1.5;
+}
+
+.footer-contact a:hover{
+  color:#4fd1ff;
+}
+
+.contact-icon{
+  margin-top:4px;
+}
 /* Responsive */
 
 @media (max-width:900px){

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "../styles/Footer.css";
 
 function Footer() {
@@ -28,7 +28,7 @@ function Footer() {
           <Link to="/services">Services</Link>
         </div>
 
-        {/* Services */}
+        {/* Our Services */}
 
         <div className="footer-section">
           <h3>Our Services</h3>
@@ -39,10 +39,33 @@ function Footer() {
           <p>CNC Machining</p>
         </div>
 
-        {/* Social Media */}
+        {/* Contact Info */}
 
         <div className="footer-section">
-          <h3>Connect With Us</h3>
+          <h3>Contact Us</h3>
+
+          <p className="footer-contact">
+            <FaEnvelope className="contact-icon" />
+            <a href="mailto:hrbmvengineers@gmail.com">
+              hrbmvengineers@gmail.com
+            </a>
+          </p>
+
+          <p className="footer-contact">
+            <FaMapMarkerAlt className="contact-icon" />
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Neeloth+Plaza+East+Nadakkavu+Kozhikode"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Door No: 2951/A, Ground Floor, Neeloth Plaza,  
+              Holy Cross IMT Road, East Nadakkavu,  
+              Opp Malayala Manorama, Wayanad Road,  
+              Kozhikode, Kerala
+            </a>
+          </p>
+
+          {/* Social Media */}
 
           <div className="social-icons">
 
@@ -55,7 +78,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://www.instagram.com/bmv_engineers?igsh=MXF6enBmYmJmMmVhYQ=="
+              href="https://www.instagram.com/bmv_engineers"
               target="_blank"
               rel="noreferrer"
             >
